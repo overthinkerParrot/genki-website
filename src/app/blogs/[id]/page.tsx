@@ -22,19 +22,19 @@ export async function generateStaticParams(){
     })
 }
 // @ts-ignore
-export async function generateMetaData({params:{id}}:Props) {
-    const post =await getPostByName(`blogs/${id}.mdx`);
-    if(!post){
-        return {
-            title:'Post Not Found'
-        }
-    }
+// export async function generateMetaData({params:{id}}:Props) {
+//     const post =await getPostByName(`blogs/${id}.mdx`);
+//     if(!post){
+//         return {
+//             title:'Post Not Found'
+//         }
+//     }
 
-    return {
-        title:post.meta.title
-    }
+//     return {
+//         title:post.meta.title
+//     }
    
-}
+// }
 
 export default async function page({params:{id}}:Props) {
     
