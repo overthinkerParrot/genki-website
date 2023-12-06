@@ -1,7 +1,4 @@
-export default function Home({blogs,projects}:{
-  blogs:React.ReactNode,
-  projects:React.ReactNode
-}) {
+export default function Home() {
   return (
     <>
     <div className=" text-xl h-[100vh]">
