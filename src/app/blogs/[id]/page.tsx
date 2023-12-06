@@ -21,7 +21,7 @@ export async function generateStaticParams(){
         id:post.id
     })
 }
-
+// @ts-ignore
 export async function generateMetaData({params:{id}}:Props) {
     const post =await getPostByName(`blogs/${id}.mdx`);
     if(!post){
